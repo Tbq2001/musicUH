@@ -1,7 +1,7 @@
 import express from "express";
 import sql from "mssql";
 import { getConnectionPool } from "../database.js"; // Use ES module import
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import dotenv from "dotenv";
 

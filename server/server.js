@@ -2,8 +2,9 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import apiRoutes from "./routes/api.js";
-import { getConnectionPool } from "./database.js"; // Use ES module import
+import { getConnectionPool } from "./database.js";
 import corsOptions from "./config/corsOptions.js";
+
 dotenv.config(); // Load environment variables
 
 const app = express();
