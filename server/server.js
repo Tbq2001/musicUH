@@ -34,3 +34,7 @@ getConnectionPool().catch((err) => {
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
 });
+app.use((err, req, res, next) => {
+  console.error("An error occurred:", err.message);
+  res.status(500).send("Something broke!");
+});
